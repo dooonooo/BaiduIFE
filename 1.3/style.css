@@ -1,0 +1,53 @@
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.clearFix:after{
+    content: '';
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height:0;
+}
+
+.clearFix{
+    zoom: 1;
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eee;
+    border: solid 1px #999;
+    clear: both;
+}
+
+.leftBox {
+    background-color: #fff;
+    width: 198px;
+    float: left;
+    border: solid 1px #999;
+}
+
+.rightBox {
+    background-color: #fff;
+    width: 80px;
+    float: right;
+    border: solid 1px #999;
+    padding: 19px;
+}
+
+.rightBox img {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.main {
+    background-color: #fff;
+    border: solid 1px #999;
+    margin: 0 140px 0 220px;
+    color: #ff0;
+}

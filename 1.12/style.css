@@ -1,0 +1,151 @@
+.clearFix:after {
+    content: '';
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+.clearFix {
+    zoom: 1;
+}
+
+
+
+#table th, tr, td {
+    border: 1px solid #fff;
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+}
+
+th {
+    background-color: #000;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #cccccc;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(2),
+tr:nth-child(3),
+tr:nth-child(4) {
+    color: red;
+}
+
+#input1 {
+    width: 200px;
+    border: solid 1px #000;
+    transition: width 2s, border 2s;
+}
+
+#input1:focus {
+    width: 300px;
+    border: #628cff;
+}
+
+#bannerBox {
+    width: 600px;
+    height: 100px;
+    /*overflow: hidden;*/
+    position: absolute;
+}
+
+.banner {
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    background-color: #ffcc00;
+    -webkit-animation-name: mymove1;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+#banner1 {
+    background-color: #ffcc00;
+}
+
+#banner2 {
+    background-color: green;
+}
+
+#banner3 {
+    background-color: #628cff;
+}
+
+@keyframes mymove1 {
+    0% {
+        left: 0;
+    }
+    30% {
+        left: 0px;
+    }
+    35% {
+        left: -200px;
+    }
+    65% {
+        left: -200px;
+    }
+    70% {
+        left: -400px;
+    }
+    98% {
+        left: -400px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+/*点击*/
+/*div {*/
+    /*-webkit-transition-property: left;*/
+    /*-webkit-transition-duration: 2s;*/
+    /*-webkit-transition-timing-function: linear;*/
+    /*-webkit-transition-delay: 0s;*/
+/*}*/
+
+
+
+#btn1:target {
+    z-index: 7;
+    height: 150px;
+    animation: mymove1 8s linear infinite normal;
+    -webkit-animation: mymove1 8s linear infinite normal;
+
+}
+
+
+
+.btnBox {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    background-color: #cccccc;
+    position: absolute;
+    left: 140px;
+    top: 80px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    border: solid 1px #fff;
+    cursor: pointer;
+}
+
+.bannerShow {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}

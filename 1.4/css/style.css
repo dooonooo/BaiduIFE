@@ -1,0 +1,33 @@
+html, body, div {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+}
+
+.ball {
+    height: 100px;
+    width: 100px;
+    background-color: #fc0;
+    border-radius: 50px;
+    position: relative;
+}
+
+.left {
+    left: -50px;
+    top: -50px;;
+}
+
+.right {
+    left: 350px;
+    top: 50px;;
+}
