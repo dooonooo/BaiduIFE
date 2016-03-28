@@ -3,7 +3,7 @@
 ------
 示例页面：<http://dooonooo.github.io/BaiduIFE>
 
-###完成情况
+### 完成情况
 
 :white_check_mark: 已经完成
 :clock12:做了但没有完成
@@ -12,7 +12,7 @@
 | 项目| 完成情况   |  完成时间  |任务点|
 | --------| :-----:  | :----:  |:----: |
 |1.1|:white_check_mark:|零基础HTML编码|||
-|1.2|:heavy_minus_sign:||
+|1.2|:white_check_mark:|零基础HTML及CSS编码（一）|
 |1.3|:white_check_mark:|三栏式布局|
 |1.4|:white_check_mark:|定位和居中问题|
 |1.5|:heavy_minus_sign:||
