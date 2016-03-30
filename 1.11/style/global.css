@@ -1,0 +1,104 @@
+/* globel.css*/
+/* 清除标记的外边距和内边距 */
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr ,div{
+    margin: 0;
+    padding: 0;
+}
+/* 全局的颜色字体设置 */
+body, button,input,select,textarea {
+    font: 14px/1.5 "Microsoft Yahei", arial, verdana, sans-serif;
+}
+/* 标题设置 */
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+/* 项目符号 */
+ul,ol,li {
+    list-style: none;
+}
+
+fieldset,img {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button,input,select,textarea {
+    font-size: 100%;
+}
+
+small {
+    font-size: 12px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+}
+/* 链接设置 */
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+}
+/* 颜色设置 */
+.red{
+    color:#ff0000;
+}
+.blue{
+    color:#0000ff;
+
+}
+.green{
+    color:#00ff00;s
+}
+
+
+/*清除浮动*/
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/*浮动*/
+.floatRight {
+    float: right;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+/*文本超出隐藏，显示省略号*/
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
