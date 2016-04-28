@@ -1,6 +1,6 @@
-sort排序
+[sort](http://www.w3school.com.cn/jsref/jsref_sort.asp) 方法用于对数组的元素进行排序
 
-querySelectorAll()
+[document.querySelectorAll()](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/querySelectorAll) 返回一个non-live的NodeList对象,这个对象将会包含调用querySelectorAll()方法的那个DOM对象的所有后代元素中匹配指定css选择器的元素们
 
 [split()](http://www.w3school.com.cn/jsref/jsref_split.asp) 将字符串分割成字符串数组
 
