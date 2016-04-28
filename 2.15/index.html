@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>IFE JavaScript Task 15</title>
+    <title>IFE JavaScript Task 01</title>
 </head>
 <body>
 
@@ -17,9 +17,9 @@
 </ul>
 
 <ul id="resort">
-
-    <!--<li>第一名：北京空气质量：<b>90</b></li>-->
-    <!--<li>第二名：北京空气质量：<b>90</b></li>
+    <!--
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
     <li>第三名：北京空气质量：<b>90</b></li>
      -->
 
@@ -38,17 +38,17 @@
         /*
          coding here
          */
-        var source = document.getElementById("source");
         var sourceLi = document.querySelectorAll("#source li");
         var data = [];
-        for (var i = 0; i < sourceLi.length; i++) {
+        for (var i = 1; i < sourceLi.length; i++) {
             var text = sourceLi[i].innerText;
-            var result = text.split("：");
-            data.push(result);
-            //?在里面打印时，为什么每次打印重复
+            var res = text.split("：");
+            data.push(res);
         }
+        console.log(data);
+        console.log(sourceLi);
 
-//        console.log(data);
+
         /*
          data = [
          ["北京", 90],
@@ -68,11 +68,9 @@
      */
     function sortAqiData(data) {
         data.sort(function (a, b) {
-            return a[1] - b[1];
-        });
-
+                    return a[1] - b[1];
+                });
         return data;
-
     }
 
     /**
@@ -81,21 +79,16 @@
      * 格式见ul中的注释的部分
      */
     function render(data) {
-//        定义一个数组dataText用来存储输出的HTML
-        var dataText = [];
-        for (var i = 0; i < data.length; i++) {
-            data[i][0] = "<li>第" + (i + 1) + "名：" + data[i][0] + "：";
-            data[i][1] = "<b>" + data[i][1] + "</b></li>";
-//           将二维数组转为一维度数组
-            dataText[i] = data[i][0].concat(data[i][1]);
+        var dataHTML=[];
+        /*<li>第一名：北京空气质量：<b>90</b></li>*/
+        for (var i = 0; i< data.length; i++){
+            data[i][0] = "<li>第"+(i+1)+"名："+ data[i][0] +"：";
+            data[i][1] = "<b>"+data[i][1] +"</b></li>";
+            dataHTML[i] = data[i][0].concat(data[i][1]);
         }
-
-        dataText = dataText.join("");
-
-
-//        将内容输出到页面中
+        dataHTML = dataHTML.join("");
         var resort = document.getElementById("resort");
-        resort.innerHTML = dataText;
+        resort.innerHTML = dataHTML;
 
     }
 
@@ -110,9 +103,10 @@
 
         // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
         var sortBtn = document.getElementById("sort-btn");
-        sortBtn.addEventListener("click", function () {
-            btnHandle();
+        sortBtn.addEventListener("click",function(){
+           btnHandle();
         });
+
     }
 
     init();

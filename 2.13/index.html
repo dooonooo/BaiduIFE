@@ -14,25 +14,28 @@
 <script type="text/javascript">
 
     (function () {
-        /*
-         在注释下方写下代码
-         给按钮button绑定一个点击事件
-         在事件处理函数中
-         获取aqi-input输入的值，并显示在aqi-display中
-         */
-        var aqiValue = null;
-        var btn = document.getElementById("button");
-        btn.onclick = (function () {
-            aqiValue = document.getElementById("aqi-input").value;
-            if (aqiValue != "") {
-                document.getElementById("aqi-display").innerHTML = aqiValue;
-            }
+                /*
+                 在注释下方写下代码
+                 给按钮button绑定一个点击事件
+                 在事件处理函数中
+                 获取aqi-input输入的值，并显示在aqi-display中
+                 */
+                var aqiInput = document.getElementById("aqi-input");
+                var btn = document.getElementById("button");
+                var aqiDisplay = document.getElementById("aqi-display");
 
-            else {
-                alert("请输入北京今天空气质量");
-            }
+                btn.addEventListener('click', function () {
+                    var aqiV = aqiInput.value;
+                    if (aqiV !==''){
+                        aqiDisplay.innerHTML =aqiV ;
+                    }
+                    else {
+                        aqiDisplay.innerHTML ="请填写内容" ;
+                    }
+                });
 
-        });
+
+
     })();
 
 </script>
